@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  text-align: center;
+  background: #fff5f8;
+  overflow: hidden;
+}
+
+/* Scenes */
+.scene {
+  display: none;
+  height: 100vh;
+  padding: 120px 20px 0;
+}
+
+.scene.active {
+  display: block;
+}
+
+/* Backgrounds */
+.intro {
+  background: linear-gradient(#fff0f6, #fde2e4);
+}
+
+.garden {
+  background: linear-gradient(#ffeef5, #e6f7ff);
+}
+
+.simran, .piyush {
+  background: #ffffff;
+}
+
+.proposal {
+  background: #ffe6eb;
+}
+
+.hug {
+  background: #ffffff;
+}
+
+.sky {
+  background: linear-gradient(#dff3ff, #ffffff);
+}
+
+.lifetime {
+  background: #fef6e4;
+}
+
+.sunset {
+  background: linear-gradient(#ffddb3, #ffc3a0);
+}
+
+/* Text */
+h1 {
+  color: #444;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 1.1em;
+}
+
+/* Characters */
+.character {
+  width: 180px;
+  margin: 20px auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+.kneel {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+/* Effects */
+.butterfly {
+  width: 60px;
+  position: absolute;
+  top: 40%;
+  left: -60px;
+  animation: fly 8s linear infinite;
+}
+
+.ring {
+  width: 80px;
+  animation: pop 2s infinite;
+}
+
+/* Buttons */
+#nextBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #ff8fab;
+  color: #fff;
+  font-size: 16px;
+}
+
+#startBtn {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+  padding: 16px 26px;
+  font-size: 18px;
+  background: #ffd6e8;
+  border: none;
+  border-radius: 30px;
+  color: #b3005e;
+  z-index: 10;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fly {
+  from { transform: translateX(-80px); }
+  to { transform: translateX(120vw); }
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
